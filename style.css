@@ -10,5 +10,10 @@ main {
 }
 body{
   color: white;
-  background-color: rgb(255, 0, 242);
+  background-image: url('img/360_F_85768580_PZMtScWpbxEf9NQQD3aOprZY0UnHMdic.jpg');
+  background-size: cover;
+}
+p, h2{
+  background-color: black;
+
 }
