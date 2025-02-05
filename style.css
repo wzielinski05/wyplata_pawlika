@@ -1,0 +1,14 @@
+main {
+	width: 100vw;
+	height: 100vh;
+  font-size: 3rem;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  color: white;
+  background-color: rgb(255, 0, 242);
+}
