@@ -1,6 +1,7 @@
 const months = document.querySelector('#months')
 const weeks = document.querySelector('#weeks')
 const days = document.querySelector('#days')
+const seconds = document.querySelector('#seconds')
 const lastPayment = new Date('2024-10-01')
 let today = new Date()
 const DateDiff = {
@@ -32,8 +33,26 @@ const DateDiff = {
     return d2.getFullYear() - d1.getFullYear();
   }
 }
+function secondsSince(targetDate) {
+  const targetTime = targetDate.getTime();
+  const currentTime = Date.now();
+  return Math.floor((currentTime - targetTime) / 1000);
+}
+function update() {
+  seconds.textContent = secondsSince(lastPayment)
+}
 months.textContent = DateDiff.inMonths(lastPayment, today)
 weeks.textContent = DateDiff.inWeeks(lastPayment, today)
 days.textContent = DateDiff.inDays(lastPayment, today)
+
+function updateSeconds() {
+  document.getElementById("secondsCounter").textContent = "Sekundy od 10.10.2024: " + secondsSince(targetDate);
+}
+
+setInterval(update, 1000);
+
+document.addEventListener("DOMContentLoaded", () => {
+  update();
+});
 
 
