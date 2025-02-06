@@ -1,0 +1,10 @@
+{
+	"name": "Wypłata",
+	"short_name": "Wypłata",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#fff",
+	"theme_color": "white",
+	"scope": ".",
+	"description": "Kiedy wypłata"
+}
