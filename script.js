@@ -2,7 +2,7 @@ const months = document.querySelector('#months')
 const weeks = document.querySelector('#weeks')
 const days = document.querySelector('#days')
 const seconds = document.querySelector('#seconds')
-const lastPayment = new Date('2024-10-01')
+const lastPayment = new Date('2025-03-11T18:29')
 let today = new Date()
 const DateDiff = {
 
